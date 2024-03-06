@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #D8CFC4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    /* min-width: 1000px;
+    min-height: 100px; */
+    height: 100vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+}
+
+.container .left_side {
+    display: inline-block;
+    position: relative;
+    background-color: #F2ECE4; 
+    padding: 40px;
+    /* width: 100;
+    height: 100%; */
+}
+
+.profiletext {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCB08F;
+}
+
+.profiletext .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #CCB08F;
+}
+
+.profiletext .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* .profiletext h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+} */
+.container .right_side {
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+    display: inline-block;
+
+}
+
+ul a.ABOUT {
+    display: inline-block;
+    position: relative;
+    padding: o 20px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+ul a.EXPERIENCE {
+    display: inline-block;
+    position: relative;
+    padding: o 20px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+ul a.EDUCATION {
+    display: inline-block;
+    position: relative;
+    padding: o 20px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+ul a.SKILLS {
+    display: inline-block;
+    position: relative;
+    padding: o 20px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+ul a.INTERESTS {
+    display: inline-block;
+    position: relative;
+    padding: o 20px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+ul a.AWARDS {
+    display: inline-block;
+    position: relative;
+    padding: o 20px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.about .title2 {
+    display: inline-block;
+    color: black;
+    font-size: xx-large;
+    font-family: serif;
+}
+
+.about .title3 {
+    display: inline-block;
+    color: #CCB08F;
+    font-family: serif;
+    font-size: xx-large;
+}
+
+/* span a{
+    border-radius: 50%;
+    padding: 1em;
+    height: 30px;
+    width: 30px;
+background-color: white;
+color:black;
+} */
+.about .title4 {
+    display: inline-block;
+    color: grey;
+    font-family: serif;
+    font-size: medium;
+}
+
+.para p {
+    color: black;
+    display: inline-block;
+}
+
+.icons {
+    margin: 10px;
+    position: relative;
+    top: 40px;
+    left: 0;
+    border-radius: 50%;
+    padding: 1em;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: black;
+}
+
+.icon2 {
+    position: relative;
+    top: 40px;
+    left: 0;
+    margin: 10px;
+    border-radius: 50%;
+    padding: 1em;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: black;
+}
+
+.icon3 {
+    margin: 10px;
+    position: relative;
+    top: 40px;
+    left: 0;
+    margin: 5px;
+    border-radius: 50%;
+    padding: 1em;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: black;
+}
+
+.icon4 {
+    margin: 10px;
+    position: relative;
+    top: 40px;
+    left: 0;
+    border-radius: 50%;
+    padding: 1em;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: black;
+}
+
+.experience .heading1 {
+    top: 100px;
+    left: 0;
+    position: relative;
+    display: block;
+    color: black;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+
+}
+
+.experience .heading2 {
+    position: relative;
+    top: 130px;
+    left: 0;
+    display: inline;
+    color: black;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+
+}
+
+.experience .heading3 {
+position: relative;
+top: 140px;
+left: 0;
+    display: inline-block;
+    color: grey;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+
+}
+
+#email {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: #CCB08F;
+}
+.para2{
+    position: relative;
+    top:150px ;
+    left: 0;
+}
+
+.experience2 .heading4 {
+    position: relative;
+top: 160px;
+left: 0;
+    display: inline-block;
+    color: black;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+}
+
+.experience2 .heading5 {
+    position: relative;
+    top: 170px;
+    left: 0;
+    display: inline-block;
+    color: grey;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+
+}
+.para3{
+    position: relative;
+    top:190px ;
+    left: 0;
+}
+
+.experience3 .heading6 {
+    position: relative;
+top: 200px;
+left: 0;
+    display: inline-block;
+    color: black;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+}
+
+.experience3 .heading7 {
+    position: relative;
+    top: 210px;
+    left: 0;
+    display: inline-block;
+    color: grey;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+
+}
+.para4{
+    position: relative;
+    top:220px ;
+    left: 0;
+}
+
+.experience4 .heading8 {
+    position: relative;
+    top: 220px;
+    left: 0;
+    display: inline-block;
+    color: black;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+}
+
+.experience4 .heading9 {
+    position: relative;
+    top: 170px;
+    left: 0;
+    display: inline-block;
+    color: grey;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin-top: 30px;
+
+}
+.para5{
+    position: relative;
+    top:180px ;
+    left: 0;
+}
+
+.education .heading10 {
+    position: relative;
+    top: 130px;
+    left: 0;
+    display: inline-block;
+    color: black;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+
+}
+
+.education .heading11 {
+    position: relative;
+    top: 150px;
+    left: 0;
+    display: inline-block;
+    color: black;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+}
+
+.education .heading12 {
+    position: relative;
+    top: 160px;
+    left: 0;
+    display: inline;
+    color: grey;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+}
+
+.para6 .para7 {
+    position: relative;
+    top:200px ;
+    left: 0;
+    display: inline;
+    color: gray;
+    padding: 2px;
+    margin: 10px;
+}
+
+.para6 .para8 {
+    position: relative;
+    top: 210px;
+    left: 0;
+    display: block;
+    color: gray;
+    padding: 2px;
+    margin-bottom: 50px;
+}
+
+.education2 .heading13 {
+    position: relative;
+    top: 200px;
+    left: 0;
+    display: inline-block;
+    color: black;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin: 10px;
+}
+
+.education2 .heading14 {
+    position: relative;
+    top: 210px;
+    left: 0;
+    display: inline-block;
+    color: grey;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin-top: 30px;
+}
+
+.para9 p{
+    position: relative;
+    top: 220px;
+    left: 0;
+    display: inline;
+    color: gray;
+    padding: 2px;
+    margin-bottom: 100px;
+}
+
+
+hr{
+    position: relative;
+    top: 100px;
+    margin-top: 50px;
+}
+.one{
+    position: relative;
+    top: 100px;
+    margin-top: 150px;
+
+}
+.two{
+    position: relative;
+    top: 100px;
+    margin-top: 160px;
+}
+
+
+.interests .heading15 {
+    position: relative;
+    top: 200px;
+    left: 0;
+    display: inline-block;
+    color: black;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin-bottom: 10px;
+margin-top: 15
+}
+.para10 p{
+    position: relative;
+    top: 220px;
+    left: 0;
+    display: inline;
+    color: gray;
+    padding: 2px;
+    margin-bottom: 100px;
+}
+.three{
+    position: relative;
+    top: 100px;
+    margin-top: 160px;
+}
+.awards .heading16{
+    position: relative;
+    top: 200px;
+    left: 0;
+    display: inline-block;
+    color: black;
+    font-family: serif;
+    font-size: xx-large;
+    padding: 2px;
+    margin-bottom: 10px;
+
+}
+.award2 ul{
+    position: relative;
+    top: 220px;
+    left: 0;
+    display: inline;
+    color: gray;
+    padding: 2px;
+    margin-bottom: 100px;
+}
+.award2 .list1{
+    position: relative;
+    top: 220px;
+    left: 0;
+    display: block;
+}
+.award2 .list2{
+    position: relative;
+    top: 220px;
+    left: 0;
+    display: block;
+}
+.award2 .list3{
+    position: relative;
+    top: 220px;
+    left: 0;
+    display: block;
+}
+.award2 .list4{
+    position: relative;
+    top: 220px;
+    left: 0;
+    display: block;
+}
+.award2 .list5{
+    position: relative;
+    top: 120px;
+    left: 0;
+    display: block;
+}
+.award2 .list6{
+    position: relative;
+    top: 50px;
+    left: 0;
+    display: block;
+}
+.award2 .list7{
+    position: relative;
+    top: 40px;
+    left: 0;
+    display: block;
+}
